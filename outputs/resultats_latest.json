@@ -1,7 +1,7 @@
 {
   "mode": "realtime",
   "station": "Val d'Isere",
-  "generated_at": "2026-02-19T09:00:48.393556+00:00",
+  "generated_at": "2026-02-19T09:08:20.118184+00:00",
   "now_index": 57,
   "hypotheses": {
     "H1": "Indice alea = max(vent/80, neige/20) + 0.2 si temp<-15C",
@@ -1110,8 +1110,8 @@
       "nom": "Téléphérique de l'Olympique",
       "type": "telepherique",
       "secteur": "bellevarde",
-      "lat": 45.4502,
-      "lon": 6.9726,
+      "lat": 45.445236,
+      "lon": 6.966129,
       "seuil_impact": 0.45,
       "seuil_fermeture": 0.75,
       "poids_forfait": 4
@@ -1121,8 +1121,8 @@
       "nom": "Funival (La Daille)",
       "type": "funiculaire",
       "secteur": "bellevarde",
-      "lat": 45.454467,
-      "lon": 6.959956,
+      "lat": 45.451606,
+      "lon": 6.957546,
       "seuil_impact": 0.35,
       "seuil_fermeture": 0.85,
       "poids_forfait": 3
@@ -1132,8 +1132,8 @@
       "nom": "Télécabine de Solaise",
       "type": "telecabine",
       "secteur": "solaise",
-      "lat": 45.4468,
-      "lon": 6.9768,
+      "lat": 45.439848,
+      "lon": 6.985228,
       "seuil_impact": 0.4,
       "seuil_fermeture": 0.72,
       "poids_forfait": 3
@@ -1143,8 +1143,8 @@
       "nom": "Téléphérique du Fornet",
       "type": "telepherique",
       "secteur": "fornet",
-      "lat": 45.4623,
-      "lon": 7.0052,
+      "lat": 45.446615,
+      "lon": 7.014531,
       "seuil_impact": 0.4,
       "seuil_fermeture": 0.68,
       "poids_forfait": 2
@@ -1154,8 +1154,8 @@
       "nom": "Télécabine de La Daille",
       "type": "telecabine",
       "secteur": "bellevarde",
-      "lat": 45.4548,
-      "lon": 6.9648,
+      "lat": 45.459228,
+      "lon": 6.955529,
       "seuil_impact": 0.42,
       "seuil_fermeture": 0.7,
       "poids_forfait": 2
