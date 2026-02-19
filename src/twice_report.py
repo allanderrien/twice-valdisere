@@ -379,7 +379,13 @@ function switchTab(name, el){{
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.getElementById('panel-'+name).classList.add('active');
   document.getElementById('sim-bar').style.display = name==='simulation'?'flex':'none';
-  if(name==='simulation' && !window.mapSimInit) initMapSim();
+  if(name==='simulation'){{
+    if(!window.mapSimInit){{
+      setTimeout(function(){{ initMapSim(); }}, 50);
+    }} else if(mapSim){{
+      setTimeout(function(){{ mapSim.invalidateSize(); }}, 50);
+    }}
+  }}
 }}
 
 // ── Carte temps reel ──────────────────────────────────────
@@ -517,6 +523,7 @@ function initMapSim(){{
   L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png',{{
     attribution:'&copy; OpenStreetMap',maxZoom:18
   }}).addTo(mapSim);
+  setTimeout(function(){{ mapSim.invalidateSize(); }}, 100);
 }}
 
 function indiceComposite(vent,neige,temp){{
