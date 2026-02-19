@@ -86,7 +86,7 @@ footer{text-align:center;padding:18px;font-size:11px;color:#9ca3af;border-top:1p
   </div>
   <div class="meta">
     <div class="badge-proto">PROTOTYPE</div>
-    <div style="margin-top:6px">Généré le 2026-02-19 09:08 UTC</div>
+    <div style="margin-top:6px">Généré le 2026-02-19 09:19 UTC</div>
     <div style="margin-top:2px;color:#fff;font-size:11px">Perte totale fenêtre : <b>0 EUR</b></div>
   </div>
 </header>
@@ -1561,7 +1561,7 @@ function accSim(asset, statuts){
   var score=0, poids=0;
   secteurRem.forEach(function(r){
     var p = 1; // poids uniforme si pas d'info precise
-    score += p * (STAT_SCORE[statuts[r.id]]||1);
+    var sc = STAT_SCORE[statuts[r.id]]; score += p * (sc !== undefined ? sc : 1);
     poids += p;
   });
   return poids>0 ? score/poids : 1;

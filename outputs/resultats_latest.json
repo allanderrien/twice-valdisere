@@ -1,7 +1,7 @@
 {
   "mode": "realtime",
   "station": "Val d'Isere",
-  "generated_at": "2026-02-19T09:08:20.118184+00:00",
+  "generated_at": "2026-02-19T09:19:17.299319+00:00",
   "now_index": 57,
   "hypotheses": {
     "H1": "Indice alea = max(vent/80, neige/20) + 0.2 si temp<-15C",
