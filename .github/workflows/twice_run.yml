@@ -1,0 +1,46 @@
+name: TWICE — Digital Twin Val d'Isère
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-twice:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Create folders
+        run: mkdir -p outputs docs
+
+      - name: Run simulation (temps reel)
+        run: python src/twice_run.py
+
+      - name: Generate HTML report
+        run: python src/twice_report.py
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: twice-vdi-run-${{ github.run_number }}
+          path: |
+            outputs/resultats_latest.json
+            outputs/rapport.html
+          retention-days: 30
+
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/ docs/
+          git diff --staged --quiet || git commit -m "chore: TWICE VDI run #${{ github.run_number }}"
+          git push
