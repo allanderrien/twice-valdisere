@@ -16,15 +16,15 @@ FORECAST_DAYS = 7
 
 REMONTEES = [
     {"id":"olympique","nom":"Téléphérique de l'Olympique","type":"telepherique","secteur":"bellevarde",
-     "lat":45.4502,"lon":6.9726,"seuil_impact":0.45,"seuil_fermeture":0.75,"poids_forfait":4},
+     "lat":45.445236,"lon":6.966129,"seuil_impact":0.45,"seuil_fermeture":0.75,"poids_forfait":4},
     {"id":"funival","nom":"Funival (La Daille)","type":"funiculaire","secteur":"bellevarde",
-     "lat":45.454467,"lon":6.959956,"seuil_impact":0.35,"seuil_fermeture":0.85,"poids_forfait":3},
+     "lat":45.451606,"lon":6.957546,"seuil_impact":0.35,"seuil_fermeture":0.85,"poids_forfait":3},
     {"id":"solaise","nom":"Télécabine de Solaise","type":"telecabine","secteur":"solaise",
-     "lat":45.4468,"lon":6.9768,"seuil_impact":0.40,"seuil_fermeture":0.72,"poids_forfait":3},
+     "lat":45.439848,"lon":6.985228,"seuil_impact":0.40,"seuil_fermeture":0.72,"poids_forfait":3},
     {"id":"fornet","nom":"Téléphérique du Fornet","type":"telepherique","secteur":"fornet",
-     "lat":45.4623,"lon":7.0052,"seuil_impact":0.40,"seuil_fermeture":0.68,"poids_forfait":2},
+     "lat":45.446615,"lon":7.014531,"seuil_impact":0.40,"seuil_fermeture":0.68,"poids_forfait":2},
     {"id":"daille","nom":"Télécabine de La Daille","type":"telecabine","secteur":"bellevarde",
-     "lat":45.4548,"lon":6.9648,"seuil_impact":0.42,"seuil_fermeture":0.70,"poids_forfait":2},
+     "lat":45.459228,"lon":6.955529,"seuil_impact":0.42,"seuil_fermeture":0.70,"poids_forfait":2},
 ]
 
 ASSETS = [
