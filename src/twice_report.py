@@ -478,7 +478,7 @@ function accSim(asset, statuts){{
   var score=0, poids=0;
   secteurRem.forEach(function(r){{
     var p = 1; // poids uniforme si pas d'info precise
-    score += p * (STAT_SCORE[statuts[r.id]]||1);
+    var sc = STAT_SCORE[statuts[r.id]]; score += p * (sc !== undefined ? sc : 1);
     poids += p;
   }});
   return poids>0 ? score/poids : 1;
